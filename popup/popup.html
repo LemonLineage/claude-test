@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Force Dark Mode</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Force Dark Mode</h1>
+
+    <div class="toggle-row">
+      <span>Global</span>
+      <label class="switch">
+        <input type="checkbox" id="globalToggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="toggle-row">
+      <span id="siteLabel">This site</span>
+      <label class="switch">
+        <input type="checkbox" id="siteToggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <p class="hint">Site setting overrides global.</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
